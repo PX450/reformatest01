@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reforma Trust</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #fff8f0 0%, #ffe1c6 100%);
+      }
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(255, 198, 158, 0.4);
+      }
+      .section-divider {
+        height: 80px;
+        background: linear-gradient(to bottom, transparent, #fff8f0);
+      }
+      .active-nav {
+        color: #ff7e5f;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="bg-[#FAF3E6] text-[#4B4B4B]">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div
+        class="container mx-auto px-6 py-3 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold text-[#FF7E5F]">Reforma Trust</div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-[#FF7E5F] transition active-nav"
+            >Home</a
+          >
+          <a href="#about" class="hover:text-[#FF7E5F] transition">About</a>
+          <a href="#work" class="hover:text-[#FF7E5F] transition">Our Work</a>
+          <a href="#involve" class="hover:text-[#FF7E5F] transition"
+            >Get Involved</a
+          >
+          <a href="#stories" class="hover:text-[#FF7E5F] transition">Stories</a>
+          <a href="#transparency" class="hover:text-[#FF7E5F] transition"
+            >Transparency</a
+          >
+          <a href="#contact" class="hover:text-[#FF7E5F] transition">Contact</a>
+        </div>
+        <button class="md:hidden">
+          <i data-feather="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-gradient min-h-screen pt-32 pb-20 px-6 flex items-center"
+    >
+      <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+          <span class="text-[#FF7E5F]">I am for your dreams.</span><br />
+          <span>You are for my dreams.</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
+          Together we create brighter futures through education, mentorship, and
+          community support.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <button
+            class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg"
+          >
+            Donate Now
+          </button>
+          <button
+            class="border-2 border-[#FF7E5F] text-[#FF7E5F] hover:bg-[#FFF0E8] px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105"
+          >
+            Sponsor a Child
+          </button>
+          <button
+            class="border-2 border-[#FF7E5F] text-[#FF7E5F] hover:bg-[#FFF0E8] px-8 py-3 rounded-full font-medium transition-all transform hover:scale-105"
+          >
+            Volunteer
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          About Reforma Trust
+        </h2>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <h3 class="text-2xl font-semibold mb-4 text-[#FF7E5F]">
+              Our Mission
+            </h3>
+            <p class="mb-6">
+              To empower underprivileged youth through comprehensive education,
+              mentorship programs, and community development initiatives that
+              create lasting positive change.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#FF7E5F]">
+              Our Story
+            </h3>
+            <p class="mb-6">
+              Founded in 2015 by a group of educators and community leaders,
+              Reforma Trust has grown from a single classroom initiative to a
+              network of 12 community centers serving over 5,000 children
+              annually.
+            </p>
+
+            <h3 class="text-2xl font-semibold mb-4 text-[#FF7E5F]">
+              Core Values
+            </h3>
+            <ul class="space-y-3 mb-6">
+              <li class="flex items-start">
+                <i data-feather="heart" class="mr-2 text-[#FF7E5F] mt-1"></i>
+                <span
+                  >Compassion: We meet every child where they are with
+                  empathy</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="award" class="mr-2 text-[#FF7E5F] mt-1"></i>
+                <span
+                  >Excellence: We strive for the highest quality in all our
+                  programs</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="users" class="mr-2 text-[#FF7E5F] mt-1"></i>
+                <span
+                  >Community: We believe in the power of collective action</span
+                >
+              </li>
+            </ul>
+
+            <button
+              class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105"
+            >
+              Learn More About Us
+            </button>
+          </div>
+          <div class="md:w-1/2">
+            <img
+              src="http://static.photos/education/640x360/42"
+              alt="Children learning in classroom"
+              class="rounded-xl shadow-lg w-full h-auto"
+            />
+            <div class="mt-8 p-6 bg-[#FFF8F0] rounded-xl">
+              <h4 class="text-xl font-semibold mb-3 text-[#FF7E5F]">
+                By The Numbers
+              </h4>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-[#FF7E5F]">5,000+</div>
+                  <div class="text-sm">Children Impacted</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-[#FF7E5F]">12</div>
+                  <div class="text-sm">Community Centers</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-[#FF7E5F]">250+</div>
+                  <div class="text-sm">Dedicated Volunteers</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-[#FF7E5F]">97%</div>
+                  <div class="text-sm">Graduation Rate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="work" class="py-20 bg-[#FFF8F0]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Our Work
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md card-hover transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-[#FFE1C6] rounded-full flex items-center justify-center mb-4"
+            >
+              <i data-feather="book-open" class="text-[#FF7E5F] w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Community Education Centres
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Safe learning spaces providing quality education and after-school
+              programs in underserved communities.
+            </p>
+            <a href="#" class="text-[#FF7E5F] font-medium flex items-center">
+              Read More <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md card-hover transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-[#FFE1C6] rounded-full flex items-center justify-center mb-4"
+            >
+              <i data-feather="user-plus" class="text-[#FF7E5F] w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Mentorship & Skill Development
+            </h3>
+            <p class="text-gray-600 mb-4">
+              One-on-one mentorship and vocational training to prepare youth for
+              future careers.
+            </p>
+            <a href="#" class="text-[#FF7E5F] font-medium flex items-center">
+              Read More <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md card-hover transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-[#FFE1C6] rounded-full flex items-center justify-center mb-4"
+            >
+              <i data-feather="award" class="text-[#FF7E5F] w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Scholarships & Student Support
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Financial assistance and resources to help talented students
+              complete their education.
+            </p>
+            <a href="#" class="text-[#FF7E5F] font-medium flex items-center">
+              Read More <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-md card-hover transition-all duration-300"
+          >
+            <div
+              class="w-16 h-16 bg-[#FFE1C6] rounded-full flex items-center justify-center mb-4"
+            >
+              <i data-feather="mic" class="text-[#FF7E5F] w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">
+              Advocacy & Cultural Initiatives
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Programs that celebrate diversity and advocate for educational
+              equity.
+            </p>
+            <a href="#" class="text-[#FF7E5F] font-medium flex items-center">
+              Read More <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section id="involve" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Get Involved
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Volunteer -->
+          <div
+            class="bg-[#FFF8F0] rounded-xl p-8 text-center card-hover transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-[#FFE1C6] rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="users" class="text-[#FF7E5F] w-10 h-10"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Become a Volunteer</h3>
+            <p class="text-gray-600 mb-6">
+              Join our team of passionate volunteers making a difference.
+            </p>
+            <button
+              class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 mx-auto"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <!-- Sponsor -->
+          <div
+            class="bg-[#FFF8F0] rounded-xl p-8 text-center card-hover transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-[#FFE1C6] rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="heart" class="text-[#FF7E5F] w-10 h-10"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Sponsor a Child</h3>
+            <p class="text-gray-600 mb-6">
+              Change a child's life through monthly educational sponsorship.
+            </p>
+            <button
+              class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 mx-auto"
+            >
+              Learn More
+            </button>
+          </div>
+
+          <!-- Donate -->
+          <div
+            class="bg-[#FFF8F0] rounded-xl p-8 text-center card-hover transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-[#FFE1C6] rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i
+                data-feather="dollar-sign"
+                class="text-[#FF7E5F] w-10 h-10"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Donate</h3>
+            <p class="text-gray-600 mb-6">
+              Support our programs through one-time or recurring donations.
+            </p>
+            <button
+              class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 mx-auto"
+            >
+              Donate Now
+            </button>
+          </div>
+
+          <!-- Partner -->
+          <div
+            class="bg-[#FFF8F0] rounded-xl p-8 text-center card-hover transition-all duration-300"
+          >
+            <div
+              class="w-20 h-20 bg-[#FFE1C6] rounded-full flex items-center justify-center mx-auto mb-6"
+            >
+              <i data-feather="handshake" class="text-[#FF7E5F] w-10 h-10"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Partner With Us</h3>
+            <p class="text-gray-600 mb-6">
+              Corporate and organizational partnerships that create impact.
+            </p>
+            <button
+              class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 mx-auto"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stories Section -->
+    <section id="stories" class="py-20 bg-[#FFF8F0]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Stories & Testimonials
+        </h2>
+
+        <!-- Student Journey -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-semibold mb-8 text-center text-[#FF7E5F]">
+            Student Journeys
+          </h3>
+          <div
+            class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-xl p-8 shadow-md"
+          >
+            <div class="md:w-1/3 text-center">
+              <img
+                src="http://static.photos/people/320x240/101"
+                alt="Student before"
+                class="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-4 border-[#FFE1C6]"
+              />
+              <h4 class="font-medium">Before</h4>
+            </div>
+            <div class="md:w-1/3 text-center">
+              <i
+                data-feather="arrow-right"
+                class="w-12 h-12 text-[#FF7E5F] mx-auto my-4 md:my-0 md:rotate-0 rotate-90"
+              ></i>
+            </div>
+            <div class="md:w-1/3 text-center">
+              <img
+                src="http://static.photos/people/320x240/102"
+                alt="Student after"
+                class="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-4 border-[#FF7E5F]"
+              />
+              <h4 class="font-medium">After 2 Years</h4>
+            </div>
+          </div>
+          <div class="mt-8 bg-white rounded-xl p-8 shadow-md">
+            <p class="italic text-lg mb-4">
+              "Before Reforma Trust, I struggled in school and didn't believe I
+              could go to college. Now I'm the first in my family to attend
+              university, studying to become a teacher."
+            </p>
+            <p class="font-semibold text-right">- Riya, Age 18</p>
+          </div>
+        </div>
+
+        <!-- Volunteer Testimonials -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-8 text-center text-[#FF7E5F]">
+            Volunteer Experiences
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <!-- Testimonial 1 -->
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="flex items-center mb-4">
+                <img
+                  src="http://static.photos/people/200x200/201"
+                  alt="Volunteer"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">Michael T.</h4>
+                  <p class="text-sm text-gray-500">Mentor, 3 years</p>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Volunteering with Reforma has been the most rewarding
+                experience of my life. Watching my mentee grow in confidence and
+                ability has changed my perspective on what really matters."
+              </p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="flex items-center mb-4">
+                <img
+                  src="http://static.photos/people/200x200/202"
+                  alt="Volunteer"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">Sarah K.</h4>
+                  <p class="text-sm text-gray-500">Tutor, 2 years</p>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "The training and support from Reforma staff is exceptional. I
+                feel like I'm making a real difference while also growing as an
+                educator."
+              </p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white rounded-xl p-6 shadow-md">
+              <div class="flex items-center mb-4">
+                <img
+                  src="http://static.photos/people/200x200/203"
+                  alt="Volunteer"
+                  class="w-12 h-12 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-semibold">David & Priya</h4>
+                  <p class="text-sm text-gray-500">Sponsors, 5 years</p>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Getting letters from our sponsored child and seeing her
+                progress through school has brought so much joy to our family.
+                We're proud to be part of this community."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section id="transparency" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Transparency & Impact
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12 mb-16">
+          <!-- Fund Allocation -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-[#FF7E5F]">
+              Fund Allocation
+            </h3>
+            <div class="bg-[#FFF8F0] rounded-xl p-6">
+              <div class="flex justify-between mb-2">
+                <span>Education Programs</span>
+                <span class="font-medium">65%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                <div
+                  class="bg-[#FF7E5F] h-4 rounded-full"
+                  style="width: 65%"
+                ></div>
+              </div>
+
+              <div class="flex justify-between mb-2">
+                <span>Community Centers</span>
+                <span class="font-medium">20%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                <div
+                  class="bg-[#FFAD99] h-4 rounded-full"
+                  style="width: 20%"
+                ></div>
+              </div>
+
+              <div class="flex justify-between mb-2">
+                <span>Administration</span>
+                <span class="font-medium">10%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4 mb-4">
+                <div
+                  class="bg-[#FFD8C6] h-4 rounded-full"
+                  style="width: 10%"
+                ></div>
+              </div>
+
+              <div class="flex justify-between mb-2">
+                <span>Fundraising</span>
+                <span class="font-medium">5%</span>
+              </div>
+              <div class="w-full bg-gray-200 rounded-full h-4">
+                <div
+                  class="bg-[#FFE1C6] h-4 rounded-full"
+                  style="width: 5%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scholarships Granted -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-[#FF7E5F]">
+              Scholarships Granted
+            </h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-[#FFF8F0] rounded-xl p-4 text-center">
+                <div class="text-3xl font-bold text-[#FF7E5F]">328</div>
+                <div>Primary School</div>
+              </div>
+              <div class="bg-[#FFF8F0] rounded-xl p-4 text-center">
+                <div class="text-3xl font-bold text-[#FF7E5F]">175</div>
+                <div>Secondary School</div>
+              </div>
+              <div class="bg-[#FFF8F0] rounded-xl p-4 text-center">
+                <div class="text-3xl font-bold text-[#FF7E5F]">42</div>
+                <div>Vocational Training</div>
+              </div>
+              <div class="bg-[#FFF8F0] rounded-xl p-4 text-center">
+                <div class="text-3xl font-bold text-[#FF7E5F]">19</div>
+                <div>University</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Annual Reports -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-6 text-[#FF7E5F]">
+            Annual Reports
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-[#FFF8F0] rounded-xl p-6 flex flex-col">
+              <div class="mb-4">
+                <i
+                  data-feather="file-text"
+                  class="w-10 h-10 text-[#FF7E5F]"
+                ></i>
+              </div>
+              <h4 class="font-semibold mb-2">2022 Impact Report</h4>
+              <p class="text-gray-600 text-sm mb-4">
+                Comprehensive review of our programs and financials
+              </p>
+              <button
+                class="mt-auto bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105 w-full"
+              >
+                Download PDF
+              </button>
+            </div>
+            <div class="bg-[#FFF8F0] rounded-xl p-6 flex flex-col">
+              <div class="mb-4">
+                <i
+                  data-feather="file-text"
+                  class="w-10 h-10 text-[#FF7E5F]"
+                ></i>
+              </div>
+              <h4 class="font-semibold mb-2">2021 Financial Statement</h4>
+              <p class="text-gray-600 text-sm mb-4">
+                Detailed accounting of all income and expenditures
+              </p>
+              <button
+                class="mt-auto bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105 w-full"
+              >
+                Download PDF
+              </button>
+            </div>
+            <div class="bg-[#FFF8F0] rounded-xl p-6 flex flex-col">
+              <div class="mb-4">
+                <i
+                  data-feather="file-text"
+                  class="w-10 h-10 text-[#FF7E5F]"
+                ></i>
+              </div>
+              <h4 class="font-semibold mb-2">2023 Strategic Plan</h4>
+              <p class="text-gray-600 text-sm mb-4">
+                Our roadmap for expanding impact in coming years
+              </p>
+              <button
+                class="mt-auto bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-4 py-2 rounded-full text-sm font-medium transition-all transform hover:scale-105 w-full"
+              >
+                Download PDF
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#FFF8F0]">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">
+          Contact Us
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold mb-4 text-[#FF7E5F]">Address</h3>
+              <p class="flex items-start">
+                <i data-feather="map-pin" class="mr-3 mt-1 text-[#FF7E5F]"></i>
+                <span
+                  >123 Education Lane<br />Community District<br />New Delhi,
+                  110001<br />India</span
+                >
+              </p>
+            </div>
+
+            <div class="mb-8">
+              <h3 class="text-xl font-semibold mb-4 text-[#FF7E5F]">
+                Contact Details
+              </h3>
+              <p class="flex items-center mb-3">
+                <i data-feather="mail" class="mr-3 text-[#FF7E5F]"></i>
+                <span>hello@reformatrust.org</span>
+              </p>
+              <p class="flex items-center">
+                <i data-feather="phone" class="mr-3 text-[#FF7E5F]"></i>
+                <span>+91 11 2345 6789</span>
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xl font-semibold mb-4 text-[#FF7E5F]">
+                Social Media
+              </h3>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-[#FFE1C6] rounded-full flex items-center justify-center hover:bg-[#FF7E5F] hover:text-white transition-all"
+                >
+                  <i
+                    data-feather="facebook"
+                    class="text-[#FF7E5F] hover:text-white"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-[#FFE1C6] rounded-full flex items-center justify-center hover:bg-[#FF7E5F] hover:text-white transition-all"
+                >
+                  <i
+                    data-feather="twitter"
+                    class="text-[#FF7E5F] hover:text-white"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-[#FFE1C6] rounded-full flex items-center justify-center hover:bg-[#FF7E5F] hover:text-white transition-all"
+                >
+                  <i
+                    data-feather="instagram"
+                    class="text-[#FF7E5F] hover:text-white"
+                  ></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-[#FFE1C6] rounded-full flex items-center justify-center hover:bg-[#FF7E5F] hover:text-white transition-all"
+                >
+                  <i
+                    data-feather="youtube"
+                    class="text-[#FF7E5F] hover:text-white"
+                  ></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form class="bg-white rounded-xl p-8 shadow-md">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7E5F] focus:border-transparent"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7E5F] focus:border-transparent"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="subject" class="block text-gray-700 mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7E5F] focus:border-transparent"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FF7E5F] focus:border-transparent"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-[#FF7E5F] hover:bg-[#FF6A4D] text-white px-6 py-3 rounded-full font-medium transition-all transform hover:scale-105 w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="mt-16 bg-white rounded-xl overflow-hidden shadow-md">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.56663578276!2d77.20986531508274!3d28.613882982426777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5e2b7d7c0f%3A0x9a5a92d5a1a3b2c9!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1626789678911!5m2!1sen!2sin"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#FF7E5F] text-white py-12">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Reforma Trust</h3>
+            <p>
+              Empowering dreams through education and community support since
+              2015.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="#home" class="hover:underline">Home</a></li>
+              <li><a href="#about" class="hover:underline">About Us</a></li>
+              <li><a href="#work" class="hover:underline">Our Programs</a></li>
+              <li>
+                <a href="#transparency" class="hover:underline">Financials</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Get Involved</h3>
+            <ul class="space-y-2">
+              <li><a href="#involve" class="hover:underline">Volunteer</a></li>
+              <li>
+                <a href="#involve" class="hover:underline">Sponsor a Child</a>
+              </li>
+              <li><a href="#involve" class="hover:underline">Donate</a></li>
+              <li>
+                <a href="#involve" class="hover:underline">Partnerships</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Newsletter</h3>
+            <p class="mb-4">Subscribe to receive updates on our work.</p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-l-lg w-full text-gray-800 focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="bg-[#4B4B4B] hover:bg-black px-4 py-2 rounded-r-lg"
+              >
+                <i data-feather="arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="pt-8 border-t border-[#FFAD99] text-center">
+          <p>
+            © 2023 Reforma Trust. All rights reserved. |
+            <a href="#" class="hover:underline">Privacy Policy</a> |
+            <a href="#" class="hover:underline">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Update active nav link on scroll
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active-nav");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active-nav");
+          }
+        });
+      });
+
+      // Initialize feather icons
+      feather.replace();
+    </script>
+  </body>
+</html>
